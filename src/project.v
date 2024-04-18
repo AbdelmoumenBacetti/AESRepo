@@ -15,12 +15,12 @@ module tt_um_AbdelmoumenBacetti_aes(
            input  wire       clk,      // clock
            input  wire       rst_n     // reset_n - low to reset
            );
-           
+
 wire aes_we = uio_oe[0];
 //wire [7 : 0] aes_address = ;
 //wire  [31 : 0] aes_write_data = ;
 //wire [31 : 0] aes_read_data = ;
-           
+
 aes aes_dut(
            .clk(clk),
            .reset_n(reset_n),
@@ -30,5 +30,5 @@ aes aes_dut(
            .write_data(aes_write_data),
            .read_data(aes_read_data)
            );
- 
+
 endmodule // tt_um_AbdelmoumenBacetti_aes
